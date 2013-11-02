@@ -1,0 +1,24 @@
+@import "settings";
+
+	.widget_subpages{
+		ul{
+			list-style-type: none;
+		}
+	}
+
+.orbit-wrapper{
+	.orbit-caption{
+		text-align: left;
+		padding-left: 4.5%;
+		h3 {
+			a{
+				color:$darkAnchor;
+			}
+		}
+	}
+	#featured{
+		img{
+			margin-bottom: 0px;
+		}
+	}
+}

@@ -1,0 +1,132 @@
+/** Style sheet for front-end of WP Frontpage News plugin **/
+@CHARSET "UTF-8";
+
+.wpcufpn_outside {
+	text-align: left;
+	overflow: hidden;
+}
+.wpcufpn_container {
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	position:relative;
+	height: 250px;
+	/*background: #fff;*/
+}
+.wpcufpn_container ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	overflow: hidden;
+}
+.wpcufpn_container li {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0 0 3px 0;
+}
+.wpcufpn_container a,
+.wpcufpn_container a:focus,
+.wpcufpn_container a:active,
+.wpcufpn_container a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.wpcu_block_title {
+	text-align: left;
+	font-weight: bold;
+	font-size: 2.2em;
+	line-height: 2.2em;
+	color: #666;
+}
+.wpcufpn_container .title {
+	display: block;
+	color: #333;
+	font-weight: bold;
+	font-size: 1.15em;
+	text-align: left;
+	line-height: 1.15em;
+	max-width: 100%;
+}
+.wpcufpn_container .title span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+.wpcufpn_container .thumbnail {
+	display: block;
+	overflow: hidden;
+}
+.wpcufpn_container .text,
+.wpcufpn_container .date {
+	overflow: hidden;
+	display: block;
+	text-align: left;
+	line-height: 1;
+	font-weight: normal;
+	text-overflow: ellipsis;
+}
+.wpcufpn_container .date {
+	color:#666;
+}
+.wpcufpn_container .text span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+.wpcufpn_container .read-more {
+	display: block;
+	color: #888;
+	font-size: 13px;
+	text-align: right;
+}
+span.img_cropper {
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+span.img_cropper img {
+	vertical-align:middle;
+	display:block;
+}
+
+span.line_limit {
+	overflow: hidden;
+	display: inline-block;
+	max-width: 100%;
+}
+.wpcufpn_container .title .line_limit {
+
+}
+
+.wpcu-front-box {
+	/*margin: 3px;*/
+}
+.wpcu-front-box.left {
+	margin: 0;
+	padding: 0;
+}
+.wpcu-front-box.right {
+	margin: 0;
+	padding: 0;
+}
+
+.wpcu-front-box.left,
+.wpcu-front-box.right {
+	display: inline-block;
+/*	min-width: 25%;*/
+	max-width: 75%;
+	float: left;
+}
+.wpcu-front-box.top,
+.wpcu-front-box.bottom {
+	display: block;
+	clear: left;
+}
+
+div.wpcufpn_nav {
+	margin: 3px auto;
+	text-align: center;
+}
