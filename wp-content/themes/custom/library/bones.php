@@ -95,7 +95,8 @@ function bones_main_nav() {
     wp_nav_menu( 
     	array( 
     		'menu' => 'main_nav', /* menu name */
-    		'menu_class' => 'top-nav nav-bar hide-for-small',
+    		'menu_id'=> 'mainNav',
+    		'menu_class' => 'top-nav nav-bar',
     		'theme_location' => 'main_nav', /* where in the theme it's assigned */
     		'container' => 'false', /* container tag */
     		'fallback_cb' => 'bones_main_nav_fallback', /* menu fallback */
@@ -110,9 +111,10 @@ function bones_mobile_nav() {
     wp_nav_menu( 
     	array( 
     		'menu' => 'mobile_nav', /* menu name */
-    		'menu_class' => 'side-nav tabs vertical',
+    		'menu_id'=> 'sideMainNav',
+    		'menu_class' => 'nav-bar',
     		'theme_location' => 'main_nav', /* where in the theme it's assigned */
-    		'container_class' => 'mobile-nav-container', /* container tag */
+    		'container_class' => 'false', /* container tag */
     		'fallback_cb' => 'bones_main_nav_fallback', /* menu fallback */
     		'depth' => '1'
     	)
