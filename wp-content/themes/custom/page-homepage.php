@@ -44,7 +44,7 @@ Template Name: Homepage
 								<span class="orbit-caption" id="img_<?php echo $post_thumbnail_id; ?>">
 									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 									<?php the_excerpt(); ?>
-									<p><a href="<?php the_permalink(); ?>" class="button nice radius">Read more »</a></p>
+									<a href="<?php the_permalink(); ?>" class="button nice radius">Read more »</a>
 								</span>
 								<?php endforeach; ?>
 								<?php $post = $tmp_post; ?>

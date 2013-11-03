@@ -2,6 +2,7 @@
 @import "settings";
 @import "foundation";
 @import "widgets";
+@import "responsive";
 
 // Import Each Specific Piece for SASS
 // @import "foundation/base";
@@ -24,6 +25,11 @@
 		    -ms-background-size: cover;
 		    -o-background-size: cover;
 		    background-size: cover;
+		}
+
+	.sitelogo{
+		margin-top:2%;
+			height:85px;
 		}
 
 

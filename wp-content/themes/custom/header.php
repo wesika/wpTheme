@@ -79,7 +79,6 @@
 				background-image:url('. $header_logo .');
 				background-repeat:no-repeat;
 				background-position:90% top;
-				height:100%;
 			}';
 		}
 
@@ -126,7 +125,9 @@
 		$topbar_link_color = of_get_option('top_nav_link_color');
 		if ($topbar_link_color) {
 			$theme_options_styles .= '
-			.top-nav > li > a { 
+			.top-nav > li > a,
+			ul.flyout li a:hover, 
+			.nav-bar li ul li a:hover { 
 				color: '. $topbar_link_color . ' !important;
 			}';
 		}
@@ -142,7 +143,9 @@
 		$topbar_hover_color = of_get_option('top_nav_hover_color');
 		if ($topbar_hover_color) {
 			$theme_options_styles .= '
-			.top-nav > li:hover { 
+			.top-nav > li:hover,
+			ul.flyout li a:hover,
+			.nav-bar li ul li a:hover { 
 				background-color: '. $topbar_hover_color . ';
 			}';
 		}
@@ -150,7 +153,10 @@
 		$topbar_link_active_color = of_get_option('top_nav_link_active_color');
 		if ($topbar_link_active_color) {
 			$theme_options_styles .= '
-			.top-nav > li.active, .top-nav > li.active:hover  { 
+			.top-nav > li.active, 
+			.top-nav > li.active:hover,
+			ul.flyout li.active a,
+			.nav-bar li ul li.active a   { 
 				background-color: '. $topbar_link_active_color . ';
 			}';
 		}
@@ -173,7 +179,7 @@
 				
 	</head>
 	
-	<body <?php body_class(); ?>>
+	<body <?php body_class('off-canvas hide-extras'); ?>>
 
 		<div class="row container">
 			<div class="twelve columns">
@@ -188,20 +194,18 @@
 						</div>
 					</div>
 			
+					<nav id="menu" role="navigation" class="hide-for-small">
 					<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+				</nav>
+					<p class="show-for-small">
+  			  			<a class='sidebar-button button' id="mobile-nav-button" href="#mobile-nav" >Menu</a>
+  					</p>
 
-					<div class="show-for-small menu-action">
-				  	    <a href="#sidebar" id="mobile-nav-button" class="sidebar-button small secondary button">
-							<svg xml:space="preserve" enable-background="new 0 0 48 48" viewBox="0 0 48 48" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
-								<line y2="8.907" x2="48" y1="8.907" x1="0" stroke-miterlimit="10" stroke-width="8" stroke="#000000" fill="none"/>
-								<line y2="24.173" x2="48" y1="24.173" x1="0" stroke-miterlimit="10" stroke-width="8" stroke="#000000" fill="none"/>
-								<line y2="39.439" x2="48" y1="39.439" x1="0" stroke-miterlimit="10" stroke-width="8" stroke="#000000" fill="none"/>
-								Menu
-							</svg>
-						</a>
-					</div>
-
+  					<section id="mobile-nav" role="complementary">
+				<nav id="sideMenu" role="navigation">
 					<?php bones_mobile_nav(); ?>
+					</nav>
+					</section> 
 
 				</header> <!-- end header -->
 			</div>

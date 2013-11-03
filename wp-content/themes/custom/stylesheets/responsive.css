@@ -1,0 +1,11 @@
+@media screen and (max-width: 760px) {
+  /* line 2, ../sass/responsive.scss */
+  .sitelogo {
+    display: none;
+  }
+
+  /* line 6, ../sass/responsive.scss */
+  .orbit-caption p {
+    display: none;
+  }
+}
