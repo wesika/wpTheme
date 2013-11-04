@@ -9,7 +9,12 @@
     display: none;
   }
 
-  /* line 14, ../sass/responsive.scss */
+  /* line 11, ../sass/responsive.scss */
+  .siteinfo .columns {
+    padding: 0px;
+  }
+
+  /* line 19, ../sass/responsive.scss */
   .wpcufpn_container ul li {
     width: 100% !important;
     display: block;
@@ -18,7 +23,7 @@
   }
 }
 @media screen and (min-width: 760px) {
-  /* line 25, ../sass/responsive.scss */
+  /* line 30, ../sass/responsive.scss */
   .container {
     min-height: 900px;
   }
