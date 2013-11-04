@@ -5,7 +5,18 @@
   }
 
   /* line 6, ../sass/responsive.scss */
-  .orbit-caption p {
+  .orbit-caption p, .orbit-caption a.button {
     display: none;
+  }
+
+  /* line 13, ../sass/responsive.scss */
+  .wpcufpn_container ul li {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 760px) {
+  /* line 21, ../sass/responsive.scss */
+  .container {
+    min-height: 900px;
   }
 }

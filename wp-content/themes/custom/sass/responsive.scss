@@ -3,8 +3,22 @@
    display: none;
    }
    .orbit-caption{
-   	p{
+   	p, a.button{
    		display:none;
    	}
    }
+
+.wpcufpn_container {
+   ul{
+   	li{
+   		width:100%!important;
+   	}
+   }
+}
+}
+
+@media screen and (min-width: 760px) {
+	.container{
+		min-height:900px; 
+	}
 }

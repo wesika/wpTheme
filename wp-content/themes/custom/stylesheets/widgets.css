@@ -7,12 +7,13 @@
 .orbit-wrapper .orbit-caption {
   text-align: left;
   padding-left: 4.5%;
+  padding-right: 4.5%;
 }
-/* line 14, ../sass/widgets.scss */
+/* line 15, ../sass/widgets.scss */
 .orbit-wrapper .orbit-caption h3 a {
   color: #99cc00;
 }
-/* line 20, ../sass/widgets.scss */
+/* line 21, ../sass/widgets.scss */
 .orbit-wrapper #featured img {
   margin-bottom: 0px;
 }

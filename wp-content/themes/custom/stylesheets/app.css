@@ -5933,12 +5933,13 @@ table.hide-for-medium {
 .orbit-wrapper .orbit-caption {
   text-align: left;
   padding-left: 4.5%;
+  padding-right: 4.5%;
 }
-/* line 14, ../sass/widgets.scss */
+/* line 15, ../sass/widgets.scss */
 .orbit-wrapper .orbit-caption h3 a {
   color: #99cc00;
 }
-/* line 20, ../sass/widgets.scss */
+/* line 21, ../sass/widgets.scss */
 .orbit-wrapper #featured img {
   margin-bottom: 0px;
 }
@@ -5950,8 +5951,19 @@ table.hide-for-medium {
   }
 
   /* line 6, ../sass/responsive.scss */
-  .orbit-caption p {
+  .orbit-caption p, .orbit-caption a.button {
     display: none;
+  }
+
+  /* line 13, ../sass/responsive.scss */
+  .wpcufpn_container ul li {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 760px) {
+  /* line 21, ../sass/responsive.scss */
+  .container {
+    min-height: 900px;
   }
 }
 /* line 22, ../sass/app.scss */
@@ -5974,4 +5986,26 @@ body.custom-background {
   max-width: 970px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 43, ../sass/app.scss */
+#border {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 49, ../sass/app.scss */
+#sidebar1 {
+  margin-top: 3%;
+}
+
+/* line 53, ../sass/app.scss */
+h1 {
+  font-size: 3.2em;
+}
+
+/* line 57, ../sass/app.scss */
+h3 {
+  font-size: 2.1em;
 }
