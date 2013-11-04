@@ -6,7 +6,7 @@ Template Name: Left Sidebar Page
 
 <?php get_header(); ?>
 			
-			<div id="content" class="clearfix">
+			<div id="content" class="clearfix row">
             
             	<?php get_sidebar(); // sidebar 1 ?>
 			

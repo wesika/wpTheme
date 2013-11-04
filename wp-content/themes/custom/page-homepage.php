@@ -6,7 +6,7 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 			
-			<div id="content">
+			<div id="content" class="row">
 			
 				<div id="main" class="twelve columns" role="main">
 					

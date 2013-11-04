@@ -5968,3 +5968,10 @@ body.custom-background {
   margin-top: 2%;
   height: 85px;
 }
+
+/* line 35, ../sass/app.scss */
+#menu {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}

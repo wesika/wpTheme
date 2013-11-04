@@ -181,7 +181,7 @@
 	
 	<body <?php body_class('off-canvas hide-extras'); ?>>
 
-		<div class="row container">
+		<div class="container">
 			<div class="twelve columns">
 				<header role="banner" id="top-header">
 					
